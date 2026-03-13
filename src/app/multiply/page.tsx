@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Nav from "../components/Nav";
 import { ALL_FORMATS, getFormatLabel, type OutputFormat } from "@/lib/repurpose";
 
 export default function MultiplyPage() {
@@ -54,24 +55,7 @@ export default function MultiplyPage() {
 
   return (
     <main className="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)]">
-      {/* Header */}
-      <header className="border-b border-white/10 px-6 py-4">
-        <div className="max-w-5xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <a href="/" className="text-[var(--color-text-muted)] hover:text-white transition-colors">
-              KARUKERA
-            </a>
-            <span className="text-[var(--color-text-muted)]">/</span>
-            <h1 className="text-xl font-bold">
-              Multiply
-              <span className="text-[var(--color-accent)]">.</span>
-            </h1>
-          </div>
-          <span className="text-sm text-[var(--color-text-muted)]">
-            One piece → ten formats
-          </span>
-        </div>
-      </header>
+      <Nav />
 
       <div className="max-w-5xl mx-auto px-6 py-10">
         {/* Input Section */}

@@ -1,6 +1,9 @@
+import Nav from "./components/Nav";
+
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
+      <Nav />
       {/* Hero */}
       <section className="flex-1 flex flex-col items-center justify-center px-6 py-24 text-center">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--color-accent)]/20 bg-[var(--color-accent)]/5 text-[var(--color-accent)] text-sm mb-8">

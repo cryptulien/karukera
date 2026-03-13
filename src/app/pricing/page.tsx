@@ -1,3 +1,5 @@
+import Nav from "../components/Nav";
+
 export default function Pricing() {
   const plans = [
     {
@@ -65,19 +67,7 @@ export default function Pricing() {
 
   return (
     <main className="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)]">
-      <header className="border-b border-white/10 px-6 py-4">
-        <div className="max-w-5xl mx-auto flex items-center gap-3">
-          <a href="/" className="text-[var(--color-text-muted)] hover:text-white transition-colors">
-            KARUKERA
-          </a>
-          <span className="text-[var(--color-text-muted)]">/</span>
-          <a href="/multiply" className="text-[var(--color-text-muted)] hover:text-white transition-colors">
-            Multiply
-          </a>
-          <span className="text-[var(--color-text-muted)]">/</span>
-          <span className="font-semibold">Pricing</span>
-        </div>
-      </header>
+      <Nav />
 
       <div className="max-w-5xl mx-auto px-6 py-20">
         <div className="text-center mb-16">
