@@ -1,4 +1,5 @@
 import Nav from "../components/Nav";
+import CheckoutButton from "../components/CheckoutButton";
 
 export default function Playbook() {
   const chapters = [
@@ -110,12 +111,7 @@ export default function Playbook() {
               Price increases to $49 when all chapters are live.
             </span>
           </p>
-          <a
-            href="#"
-            className="inline-block px-8 py-3 bg-[var(--color-accent)] text-black font-bold rounded-lg hover:bg-[var(--color-accent-dim)] transition-colors"
-          >
-            Buy the Playbook — $29
-          </a>
+          <CheckoutButton product="playbook" label="Buy the Playbook — $29" />
           <p className="text-xs text-[var(--color-text-muted)] mt-4">
             PDF delivery via email. 14-day money-back guarantee.
           </p>
