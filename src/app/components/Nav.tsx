@@ -10,6 +10,7 @@ export default function Nav() {
     { href: "/", label: "Home" },
     { href: "/multiply", label: "Multiply" },
     { href: "/pricing", label: "Pricing" },
+    { href: "/playbook", label: "Playbook" },
   ];
 
   return (
